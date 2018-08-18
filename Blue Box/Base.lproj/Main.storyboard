@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yCO-8H-hJ4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham Bold Regular.ttf">
+            <string>GothamBold</string>
+        </mutableArray>
+        <mutableArray key="PMN_Caecilia_45_Light.ttf">
+            <string>Caecilia-Light</string>
+            <string>Caecilia-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ScannerPage" id="BYZ-38-t0r" customClass="ScannerViewController" customModule="Blue_Box" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Sao-5B-vsk">
+                                <rect key="frame" x="270" y="20" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Mdm-au-z5J"/>
+                                    <constraint firstAttribute="width" constant="60" id="uzZ-ax-RIR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR Code is detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd0-dO-3tf">
+                                <rect key="frame" x="0.0" y="559" width="600" height="41"/>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.25098039215686274" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Rxq-Ga-hkL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Caecilia-Light" family="Caecilia" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vd0-dO-3tf" secondAttribute="trailing" id="1p2-Z5-DVo"/>
+                            <constraint firstItem="Vd0-dO-3tf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FWb-qn-qne"/>
+                            <constraint firstItem="Sao-5B-vsk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Igx-cH-vU9"/>
+                            <constraint firstItem="Sao-5B-vsk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hdZ-en-YKS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vd0-dO-3tf" secondAttribute="bottom" id="oDQ-E5-Tst"/>
+                            <constraint firstItem="Vd0-dO-3tf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="quy-ZK-oYT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoImage" destination="Sao-5B-vsk" id="Up7-Ks-2QI"/>
+                        <outlet property="messageLabel" destination="Vd0-dO-3tf" id="5tD-M1-Z9y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="1183"/>
+        </scene>
+        <!--About Blue Box QR-->
+        <scene sceneID="hrD-YG-kEM">
+            <objects>
+                <viewController storyboardIdentifier="AboutPage" id="Y9B-kC-LSL" customClass="AboutViewController" customModule="Blue_Box" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eYe-rD-BHW"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ym-Ei-fRF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IJV-Uc-BZm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFM-BW-ASn">
+                                <rect key="frame" x="20" y="64" width="560" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">The Blue Box QR App presents the documents related to the specific job, such as workplace hazards, site layout and operations manual.   How to Use this App: 1. Open the QR scanner. 2. Point the camera to the specified QR marker. 3. Once the QR marker is detected, wait for the PDF files to load. 4. Select a tab at the bottom to view a specific document.   Copyright © 2016 Harrison Grierson. All rights reserved.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Caecilia-Light" family="Caecilia" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6l-yA-4xP">
+                                <rect key="frame" x="20" y="535" width="560" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Miz-aE-NFs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="20"/>
+                                <state key="normal" title="Start QR Scanner">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="LZX-2a-i0o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70980392160000005" green="0.82745098039999998" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="G6l-yA-4xP" firstAttribute="leading" secondItem="IJV-Uc-BZm" secondAttribute="leading" constant="20" id="6mr-uZ-WOs"/>
+                            <constraint firstAttribute="trailing" secondItem="AFM-BW-ASn" secondAttribute="trailing" constant="20" id="IKq-RJ-0zU"/>
+                            <constraint firstItem="AFM-BW-ASn" firstAttribute="top" secondItem="eYe-rD-BHW" secondAttribute="bottom" id="Pe7-WH-1MF"/>
+                            <constraint firstItem="5ym-Ei-fRF" firstAttribute="top" secondItem="G6l-yA-4xP" secondAttribute="bottom" constant="20" id="al3-Iq-vOt"/>
+                            <constraint firstItem="AFM-BW-ASn" firstAttribute="leading" secondItem="IJV-Uc-BZm" secondAttribute="leading" constant="20" id="kjm-xl-taw"/>
+                            <constraint firstItem="G6l-yA-4xP" firstAttribute="top" secondItem="AFM-BW-ASn" secondAttribute="bottom" constant="10" id="u8Y-FR-4qh"/>
+                            <constraint firstAttribute="trailing" secondItem="G6l-yA-4xP" secondAttribute="trailing" constant="20" id="vdf-JL-Evj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Blue Box QR" id="hBN-zr-LO3"/>
+                    <connections>
+                        <outlet property="qrButton" destination="G6l-yA-4xP" id="qGh-8M-Bu4"/>
+                        <outlet property="textView" destination="AFM-BW-ASn" id="eHo-of-pIM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mh8-Bb-eBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="1183"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="diR-FM-kXY">
+            <objects>
+                <viewController id="fhL-hW-E02" customClass="PIViewController" customModule="Blue_Box" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="57O-94-NIq"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3M-gg-pYq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8H-cV-hff">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9e-fP-a6Y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g9e-fP-a6Y" secondAttribute="trailing" id="453-wR-9V2"/>
+                            <constraint firstItem="g9e-fP-a6Y" firstAttribute="top" secondItem="P8H-cV-hff" secondAttribute="top" id="Xba-Mi-DyO"/>
+                            <constraint firstItem="g9e-fP-a6Y" firstAttribute="leading" secondItem="P8H-cV-hff" secondAttribute="leading" id="mOX-Ea-gmg"/>
+                            <constraint firstItem="w3M-gg-pYq" firstAttribute="top" secondItem="g9e-fP-a6Y" secondAttribute="bottom" id="vaS-2d-rbb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zyf-Cv-Rgk">
+                        <barButtonItem key="leftBarButtonItem" image="scan" id="oU0-Nj-DNQ">
+                            <connections>
+                                <action selector="scan:" destination="fhL-hW-E02" id="zkT-bx-Ylu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="globe" id="hqZ-dq-oWy">
+                            <connections>
+                                <action selector="openWebsite:" destination="fhL-hW-E02" id="D4u-YC-gMB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfWebView" destination="g9e-fP-a6Y" id="D3Z-yt-Mdn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ym-hq-zl9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="2336"/>
+        </scene>
+        <!--Site Layout View Controller-->
+        <scene sceneID="Rbx-P3-N1y">
+            <objects>
+                <viewController id="Cb0-P9-331" customClass="SiteLayoutViewController" customModule="Blue_Box" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fy3-yo-eMy"/>
+                        <viewControllerLayoutGuide type="bottom" id="rXB-dh-sVG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yOb-rt-cXH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-xz-onf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FnQ-xz-onf" firstAttribute="top" secondItem="yOb-rt-cXH" secondAttribute="top" id="fbA-Qb-CtN"/>
+                            <constraint firstAttribute="trailing" secondItem="FnQ-xz-onf" secondAttribute="trailing" id="k7C-ra-tgw"/>
+                            <constraint firstItem="rXB-dh-sVG" firstAttribute="top" secondItem="FnQ-xz-onf" secondAttribute="bottom" id="o2u-Wh-lE0"/>
+                            <constraint firstItem="FnQ-xz-onf" firstAttribute="leading" secondItem="yOb-rt-cXH" secondAttribute="leading" id="yUN-9d-wsU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="meB-Nd-xNv">
+                        <barButtonItem key="leftBarButtonItem" image="scan" id="hWk-xp-7TE">
+                            <connections>
+                                <action selector="scan:" destination="Cb0-P9-331" id="sle-XU-g2a"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="globe" id="4Ew-WP-PUO">
+                            <connections>
+                                <action selector="openWebsite:" destination="Cb0-P9-331" id="TvB-PA-f5a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfWebView" destination="FnQ-xz-onf" id="Yvn-z7-u7P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vo-ZF-cfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="847"/>
+        </scene>
+        <!--Site Hazards View Controller-->
+        <scene sceneID="go8-nt-9Zg">
+            <objects>
+                <viewController id="JcS-ME-HW3" customClass="SiteHazardsViewController" customModule="Blue_Box" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VkM-43-wcH"/>
+                        <viewControllerLayoutGuide type="bottom" id="AVs-wy-ZIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ch-pS-cwX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-6z-9Mo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AVs-wy-ZIt" firstAttribute="top" secondItem="Tfk-6z-9Mo" secondAttribute="bottom" id="8Ss-RO-IlT"/>
+                            <constraint firstItem="Tfk-6z-9Mo" firstAttribute="leading" secondItem="5ch-pS-cwX" secondAttribute="leading" id="KsQ-ya-eHy"/>
+                            <constraint firstAttribute="trailing" secondItem="Tfk-6z-9Mo" secondAttribute="trailing" id="TYV-nb-jpk"/>
+                            <constraint firstItem="Tfk-6z-9Mo" firstAttribute="top" secondItem="5ch-pS-cwX" secondAttribute="top" id="kNx-OX-lbS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3FQ-D5-9yT">
+                        <barButtonItem key="leftBarButtonItem" image="scan" id="Zjz-Mr-VPu">
+                            <connections>
+                                <action selector="scan:" destination="JcS-ME-HW3" id="71k-Kx-bPb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="globe" id="rKo-QB-rzz">
+                            <connections>
+                                <action selector="openWebsite:" destination="JcS-ME-HW3" id="gQs-3x-OUh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfWebView" destination="Tfk-6z-9Mo" id="jtz-RN-2TO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HwK-nW-Ip3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="3100"/>
+        </scene>
+        <!--Health Safety View Controller-->
+        <scene sceneID="szD-Qu-Dn5">
+            <objects>
+                <viewController id="7Bc-TG-QgP" customClass="HealthSafetyViewController" customModule="Blue_Box" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fh2-g2-GDl"/>
+                        <viewControllerLayoutGuide type="bottom" id="97C-cN-c6c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xRJ-uH-EY8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRf-JK-Bov">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NRf-JK-Bov" firstAttribute="leading" secondItem="xRJ-uH-EY8" secondAttribute="leading" id="1PW-ga-fGV"/>
+                            <constraint firstAttribute="trailing" secondItem="NRf-JK-Bov" secondAttribute="trailing" id="PhX-Fw-pap"/>
+                            <constraint firstItem="97C-cN-c6c" firstAttribute="top" secondItem="NRf-JK-Bov" secondAttribute="bottom" id="c7J-Zg-HVC"/>
+                            <constraint firstItem="NRf-JK-Bov" firstAttribute="top" secondItem="xRJ-uH-EY8" secondAttribute="top" id="eow-CA-Nmf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="who-bF-fCZ">
+                        <barButtonItem key="leftBarButtonItem" image="scan" id="kyM-zX-UYY">
+                            <connections>
+                                <action selector="scan:" destination="7Bc-TG-QgP" id="mDB-Yf-VM5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="globe" id="uRV-05-uJT">
+                            <connections>
+                                <action selector="openWebsite:" destination="7Bc-TG-QgP" id="tst-Wn-h9E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfWebView" destination="NRf-JK-Bov" id="b21-LY-008"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XU3-oN-GWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="1589"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zo2-mw-9l3">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarPage" automaticallyAdjustsScrollViewInsets="NO" id="yEc-Zc-0Sg" customClass="TabBarController" customModule="Blue_Box" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="RfT-sD-YIt">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Bj3-l3-CzX" kind="relationship" relationship="viewControllers" id="l8p-Db-gR9"/>
+                        <segue destination="5dt-sn-Bsl" kind="relationship" relationship="viewControllers" id="FWA-sZ-KA3"/>
+                        <segue destination="RuA-zv-5Xf" kind="relationship" relationship="viewControllers" id="DXM-zx-Sf4"/>
+                        <segue destination="QKa-W4-LHB" kind="relationship" relationship="viewControllers" id="hxU-tE-K11"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSf-9h-TCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="1183"/>
+        </scene>
+        <!--P & ID-->
+        <scene sceneID="yQX-Jg-t33">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RuA-zv-5Xf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="P &amp; ID" image="PID" id="IHd-i3-Pzk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qzh-im-fNa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fhL-hW-E02" kind="relationship" relationship="rootViewController" id="5re-D4-KTs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpj-TG-GuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="2336"/>
+        </scene>
+        <!--Site Layout-->
+        <scene sceneID="4Rn-mY-mZI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bj3-l3-CzX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Site Layout" image="BP" id="HdP-fk-HMP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lrg-jr-d7A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cb0-P9-331" kind="relationship" relationship="rootViewController" id="sF7-Di-92j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M42-BG-XxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="847"/>
+        </scene>
+        <!--H & S-->
+        <scene sceneID="cog-IS-q8D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5dt-sn-Bsl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="H &amp; S" image="HS" id="jo2-Ph-FuY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ke-BR-ahP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Bc-TG-QgP" kind="relationship" relationship="rootViewController" id="Lv4-6r-Qm1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Epg-J1-mBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="1589"/>
+        </scene>
+        <!--O & M-->
+        <scene sceneID="FnZ-nw-KRG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QKa-W4-LHB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="O &amp; M" image="SH" id="6ZK-Wj-LPE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nSM-32-obT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JcS-ME-HW3" kind="relationship" relationship="rootViewController" id="Xeg-sT-KKB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flS-9a-iK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="3100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QdE-zV-wvF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yCO-8H-hJ4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ukc-Md-6uP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y9B-kC-LSL" kind="relationship" relationship="rootViewController" id="2WI-pJ-i5t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1L-34-eeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736" y="1183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BP" width="35" height="35"/>
+        <image name="HS" width="35" height="35"/>
+        <image name="PID" width="35" height="35"/>
+        <image name="SH" width="35" height="35"/>
+        <image name="globe" width="30" height="30"/>
+        <image name="hg_logo" width="89" height="49"/>
+        <image name="scan" width="30" height="30"/>
+    </resources>
+</document>
